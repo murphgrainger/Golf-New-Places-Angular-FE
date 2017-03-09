@@ -17,16 +17,9 @@ header {
 
 }
 
-main {
-}
-
 footer {
   height: 1vh;
 }
-
-/*main {
-  margin-bottom: -3em;
-}*/
 
 a {
   color: #00B7FF;
@@ -108,5 +101,9 @@ md-input-container {
   width: 100%;
   height: 53vh;
   margin-right: 2em;
+}
 
+.angular-icon {
+  margin-left: 1em;
+  width: 1.5em;
 }
