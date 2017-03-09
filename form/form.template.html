@@ -1,0 +1,32 @@
+<md-content layout-padding class="form-top">
+    <form name="searchForm" ng-submit="$ctrl.formSubmit($ctrl.search)" novalidate>
+        <div layout-gt-sm="row" class="form-area" layout-align="space-between center">
+            <div layout="column" class="form-column">
+                <h3 md-colors="{color: 'green-500'}">Where would you like to play?</h3>
+                <md-input-container>
+                    <label for="city" md-colors="{color: 'green-500'}">City</label>
+                    <input type="text" id="city" ng-model="$ctrl.search.city" md-colors="{color: 'green-500', 'border-color': 'primary-600'}"></md-input-container>
+            </div>
+            <div layout="column" class="form-column">
+                <h3 md-colors="{color: 'green-500'}">How many miles away?</h3>
+                <md-input-container id="distance-slider">
+                    <md-slider flex md-discrete class="md-warn slider" step="1" min="5" max="100" aria-label="rating" ng-model="$ctrl.search.distance"></md-slider>
+                </md-input-container>
+            </div>
+            <div layout="column" class="form-column">
+                <h3 md-colors="{color: 'green-500'}" id="course-type-label">Course Type</h3>
+                <div class="course-type" layout="row" layout-align="start center">
+                    <md-checkbox ng-model="$ctrl.search.public" aria-label="Checkbox 1" class="md-default">
+                        Public
+                    </md-checkbox>
+                    <md-checkbox ng-model="$ctrl.search.private" aria-label="Checkbox 2">
+                        Private
+                    </md-checkbox>
+                </div>
+            </div>
+            <div layout="column" class="form-column">
+                <md-button class="md-raised md-warn" type="submit">Search</md-button>
+            </div>
+        </div>
+    </form>
+</md-content>

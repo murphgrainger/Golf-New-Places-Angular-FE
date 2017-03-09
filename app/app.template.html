@@ -1,0 +1,41 @@
+<div layout="column">
+    <header>
+        <md-toolbar class="md-medium-tall">
+            <div layout="row" layout-align="center center">
+                <div flex="5">
+                    <i class="material-icons golf-logo">golf_course</i>
+                </div>
+                <div flex="80">
+                    <h1>Golf New Places</h1>
+                </div>
+                <div flex>
+                    <!-- <md-button id="search" class="md-raised md-warn">Search</md-button> -->
+                </div>
+            </div>
+        </md-toolbar>
+    </header>
+
+    <main flex>
+        <md-content role="main" class="main-content" layout-align="center center">
+            <div class="form-container" flex="100">
+                <form-comp courses="$ctrl.courses"></form-comp>
+            </div>
+            <div layout-gt-sm="row">
+                <div flex-gt-sm="70">
+                    <card-list courses="$ctrl.courses"></card-list>
+                </div>
+                <div flex-gt-sm="30" class="map-container">
+                    <map-box courses="$ctrl.courses"></map-box>
+
+                </div>
+            </div>
+        </md-content>
+    </main>
+    <footer>
+        <md-toolbar class="md-medium-small md-hue-3">
+            <div layout="row" layout-align="center center" flex>
+                <small>&copy; 2017 | Murph Grainger</small>
+            </div>
+        </md-toolbar>
+    </footer>
+</div>

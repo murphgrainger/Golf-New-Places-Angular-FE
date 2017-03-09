@@ -1,0 +1,33 @@
+<div layout="row" layout-wrap layout-align="center center">
+    <md-card ng-repeat="course in $ctrl.courses" md-theme="card" flex-gt-xs="45" flex-gt-sm="45" flex="100">
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">
+                    {{course.name}}</span>
+                <span class="md-subhead">{{course.addr_1}}
+                    {{course.city}}
+                    {{course.state_or_province}}</span>
+                <br>
+                <span class="md-subhead phone-number">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    {{course.phone}}</span>
+            </md-card-title-text>
+            <md-card-title-media>
+                <div class="md-media-md card-media" layout="column" layout-align="center center" style="min-height: 20px">
+                    <i flex class="material-icons golf-logo">golf_course</i>
+                </div>
+            </md-card-title-media>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+            <md-button ng-click="$ctrl.addressToMap(course)">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                See on Map
+            </md-button>
+            <md-button>
+                <a class="website" href="{{course.website}}" aria-label>Website</a>
+            </md-button>
+            <md-button>
+                <a href="{{course.phone}}"></a>Call</md-button>
+        </md-card-actions>
+    </md-card>
+</div>
