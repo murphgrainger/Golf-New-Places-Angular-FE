@@ -1,8 +1,6 @@
 # Golf New Places: Angular Front-End
 
-* This repo is dedicated to building out GNP into a full-stack application using Angular, Node, Express, and Postgres
-* Other repos for this project are:
-  * jQuery Front-End (original): https://github.com/murphgrainger/Golf-New-Places
+* This repo is an AngularJS refactor of the jQuery original: https://github.com/murphgrainger/Golf-New-Places
 
 ###About
 This web application allows users to see golf courses based on the location they search, mark the ones they've played, and see contact and website information for potential new courses to play. Users are able to filter viable courses based on public/private, cost, travel distance, etc. Users can also click on each course's address to see the driving directions on Google Maps.
